@@ -234,12 +234,11 @@
 		      	sLoader.fadeIn(); 
 
 		      },
-		      success: function(msg) {
+		      function(msg) {
 
 	            // Message was sent
 	            if (true) {
 	            	sLoader.fadeOut(); 
-	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();
 	               $('#message-success').fadeIn();   
 	            }
