@@ -234,21 +234,14 @@
 		      	sLoader.fadeIn(); 
 
 		      },
-		      success: function(msg) {
 
-	            // Message was sent
 	            if (1) {
 	            	sLoader.fadeOut(); 
 	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();
 	               $('#message-success').fadeIn();   
 	            }
-	            // There was an error
-	            else {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
-	            }
+
 
 		      },
 
