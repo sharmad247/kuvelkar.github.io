@@ -227,7 +227,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "inc/sendEmail.php",
+		      url: "https://formspree.io/sharmadkuvelkar@gmail.com",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
@@ -237,7 +237,7 @@
 		      success: function(msg) {
 
 	            // Message was sent
-	            if (msg == 'OK') {
+	            if (1) {
 	            	sLoader.fadeOut(); 
 	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();
