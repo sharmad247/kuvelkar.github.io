@@ -258,7 +258,7 @@
   $comment = $_REQUEST['contactMessage'];
   
   //send email
-  mail($admin_email, "$subject", $comment, "From:".$name +"Email:". $email);
+  mail($admin_email, "$subject", $comment, "From:". $email);
   
   //Email response
   //echo "Thank you for contacting us!";
