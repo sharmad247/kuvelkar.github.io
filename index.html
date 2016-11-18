@@ -247,4 +247,25 @@
 
 </body>
 
+<?php
+  if (isset($_REQUEST['email']))  {
+  
+  //Email information
+  $admin_email = "sharmadkuvelkar@gmail.com";
+  $name = $_REQUEST['contactName'];
+  $email = $_REQUEST['contactEmail'];
+  $subject = $_REQUEST['contactSubject'];
+  $comment = $_REQUEST['contactMessage'];
+  
+  //send email
+  mail($admin_email, "$subject", $comment, "From:".$name +"Email:". $email);
+  
+  //Email response
+  //echo "Thank you for contacting us!";
+  //}
+  
+  //if "email" variable is not filled out, display the form
+  else  {
+?>
+
 </html>
