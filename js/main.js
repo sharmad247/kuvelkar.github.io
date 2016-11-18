@@ -234,17 +234,30 @@
 		      	sLoader.fadeIn(); 
 
 		      },
+		      success: function(msg) {
 
-	            if (1) {
+	            // Message was sent
+	            if (true) {
 	            	sLoader.fadeOut(); 
 	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();
 	               $('#message-success').fadeIn();   
 	            }
-
+	            // There was an error
+	            else {
+	            	sLoader.fadeOut(); 
+	               $('#message-warning').html(msg);
+		            $('#message-warning').fadeIn();
+	            }
 
 		      },
+		      error: function() {
 
+		      	sLoader.fadeOut(); 
+		      	$('#message-warning').html("Something went wrong. Please try again.");
+		         $('#message-warning').fadeIn();
+
+		      }
 
 	      });     		
   		}
