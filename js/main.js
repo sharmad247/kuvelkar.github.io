@@ -227,7 +227,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "",
+		      url: "https://formspree.io/sharmadkuvelkar@gmail.com",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
