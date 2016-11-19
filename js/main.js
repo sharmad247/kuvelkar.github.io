@@ -246,16 +246,16 @@
 	            // There was an error
 	            else {
 	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
+	               //$('#message-warning').html(msg);
+		            //$('#message-warning').fadeIn();
 	            }
 
 		      },
 		      error: function() {
 
 		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
+		      	//$('#message-warning').html("Something went wrong. Please try again.");
+		         //$('#message-warning').fadeIn();
 
 		      }
 
